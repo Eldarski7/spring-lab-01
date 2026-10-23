@@ -1,0 +1,30 @@
+# src/main/resources/application.yml
+spring:
+  application:
+    name: spring-lab-01
+
+server:
+  port: 8080
+
+app:
+  owner: Sabdenov Eldar
+  group: IT1CCO-2504
+  date-pattern: yyyy-MM-dd HH:mm:ss     # used by the FormatConfig bean from lab 2
+  mail:
+    from: no-reply@iitu.kz
+    retry-count: 3
+    timeout: 5s
+    enabled: true
+  rate-limit:                           # individual assignment, variant 6
+    requests-per-minute: 60
+    burst: 10
+
+logging:
+  level:
+    kz.iitu: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,env,configprops,conditions

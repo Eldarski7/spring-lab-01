@@ -1,0 +1,13 @@
+# application-dev.yml
+server:
+  port: 8081
+app:
+  mail:
+    enabled: false             # no mail is sent in development
+    retry-count: 1
+  rate-limit:                  # individual assignment, variant 6
+    requests-per-minute: 10
+    burst: 5
+logging:
+  level:
+    kz.iitu: DEBUG
