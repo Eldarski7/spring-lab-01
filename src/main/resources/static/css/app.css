@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin: 30px; background: #f4f6fa; }
+h1 { color: #1f3864; }
+table { border-collapse: collapse; background: white; }
+th, td { border: 1px solid #999; padding: 8px 14px; }
+th { background: #dce6f2; }
+.flash { background: #e2f5e2; border: 1px solid #5a5; padding: 8px 12px; }
+input { padding: 6px; margin-right: 6px; }
